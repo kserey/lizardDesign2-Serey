@@ -1,0 +1,371 @@
+/*CSS PROY TIENDA LIZARD_DESING*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ESTILOS GENERALES */
+
+body{
+    /*border: solid pink;*/
+    background-color: rgb(105, 164, 251);
+}
+
+/*.contenedorPrincipal{
+    /*border: solid tomato;*/
+    /*grid-template-areas: "header header header header"
+                         "portada portada portada portada"
+                         "newsTitle newsTitle newsTitle newsTitle"
+                         "newsImg newsImg newsImg newsImg"
+                         "footer footer footer footer" ;
+}
+
+/* ESTILOS HEADER */
+
+.header{
+    /*border: solid magenta;*/
+    grid-area: header;
+    font-size: 1rem;
+}
+
+
+/* ESTILOS HEADER > MENÚ */
+
+.headerMenu{
+    /*border: solid yellow;*/
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(105, 164, 251);
+    position: fixed;
+}
+
+.menu .ul{
+    /*border: solid green;*/
+    display: flex;
+    height: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-shadow: 0.5px 0.5px black;
+    background-color: rgb(11, 11, 199);
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.menu ul li{
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.ul a{
+    color: white;
+}
+
+
+.menu ul li:hover{ 
+    border: solid whitesmoke;
+    padding: 5px;
+    background-color: rgb(105, 164, 251);
+    border-radius: 15px;
+ }
+
+
+/* ESTILOS HEADER > MENÚ > SUBMENU */
+
+.subMenu{
+    color: whitesmoke;
+    display: none;
+    position: absolute;
+    background-color:  rgb(70, 70, 204);
+    border-radius: 15px;
+    padding: 1px;
+}
+
+.menu ul li:hover > .subMenu{
+    display: block;
+    padding: 0.5px;
+}
+
+.subMenu li{
+    font-size: 0.8rem;
+}
+
+/* ESTILOS HEADER > PORTADA */
+
+.portada{
+    /*border: solid black;*/
+    grid-area: portada;
+    height: 30vh;
+    padding: 20vh 5rem 5rem 5rem;
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url('../img/portada1.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    justify-content: left;
+    color: white;
+}
+
+/*.portadaTexto{
+}*/
+
+h1{
+    font-size: 2rem;
+}
+
+.portadaTextoBajada{
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+/* ESTILOS DEL MAIN */
+/* ESTILOS DEL MAIN > BOTÓN WSP*/
+
+main{
+    /*border: solid green;*/
+    padding: 0.5rem;
+    background-color:rgb(163, 199, 255);
+}
+
+.botonWsp{
+    display: flex;
+    position:fixed;
+    width:3rem;
+    height:3rem;
+    bottom:50%;
+    right:1%;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.logoMini{
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.botonWsp img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+/* ESTILOS DEL MAIN > NEWS*/
+
+.news{
+    /*border: solid blue;*/
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"newsTitle"
+                        "newsSubtitle1"
+                        "newsHijos1"
+                        "newsSubtitle2"
+                        "newsHijos2"
+                        "newsSubtitle3"
+                        "newsHijos3"
+                        "newsSubtitle4"
+                        "newsHijos4";
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.newsTitle{
+    /*border: solid purple;*/
+    grid-area: newsTitle;
+    justify-self: left;
+    padding-bottom: 1rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+.news div h4{
+    /*border: solid cyan;*/
+    width: 90vw;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.news div img{
+    padding-bottom: 0.5rem;
+    width: 90vw;
+    justify-items: center;
+}
+
+.newsSubtitle1{
+    grid-area: newsSubtitle1;
+}
+.newsSubtitle2{
+    grid-area: newsSubtitle2;
+}
+.newsSubtitle3{
+    grid-area: newsSubtitle3;
+}
+.newsSubtitle4{
+    grid-area: newsSubtitle4;
+}
+
+.newsHijos1{
+    grid-area: newsHijos1;
+    /*border: solid red;*/
+}
+
+.newsHijos2{
+    grid-area: newsHijos2;
+    /*border: solid red;*/
+}
+
+.newsHijos3{
+    grid-area: newsHijos3;
+    /*border: solid red;*/
+}
+
+.newsHijos4{
+    grid-area: newsHijos4;
+    /*border: solid red;*/
+}
+
+
+
+
+/* ESTILOS PAGES > PRODUCTOS */
+
+.picsProdM{
+    /*border: solid red;*/
+    display: flex;
+    align-items: center;
+    height: 300px;
+    }
+
+.tutoriales{
+    display: none;
+}
+
+.conocenos{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+.conocenos img{
+    width: 20%; /*OJO: CAMBIAR RESPONSIVE*/
+    align-items: center;
+}
+
+.productos img{
+    height: 3rem;
+}
+
+.ofertas ul li{
+    display: flex; 
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ofertas img{
+    height: 150px;
+}
+
+
+/* ESTILOS DEL FOOTER */
+
+footer{
+    /*border: solid yellow;*/
+    display: flex;
+    padding: 1rem;
+    background-color: rgb(105, 164, 251);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a img{
+    width: 2rem;
+    border-radius: 50%;
+}
+
+footer p{
+    /*border: solid green;*/
+    padding-right: 0.8rem;
+}
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (min-width:600px){
+    
+    .news{
+        /*border: solid blue;*/
+        padding: 0.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:"newsTitle newsTitle"
+                            "newsSubtitle1 newsSubtitle2"
+                            "newsHijos1 newsHijos2"                            "newsHijos2                          "newsHijos1 
+                            "newsSubtitle3 newsSubtitle4"
+                            "newsHijos3 newsHijos4";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .newsTitle{
+        border: solid purple;
+        justify-self: center;
+        padding-bottom: 1rem;
+    }
+
+    .news div h4{
+        /*border: solid cyan;*/
+        width: 45vw;
+    }
+
+    .news div img{
+        padding: 0.5rem 2rem;
+        width: 45vw;
+    }
+
+
+}
+/*
+@media screen and (min-width:1024px){
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .mainNosotros{
+        grid-template-rows: 0.5fr 1fr 0.3fr 0.3fr;
+        grid-template-areas: "mainP mainP img img"
+                             "imagen1 imagen2 imagen3 imagen4"
+                             "parrafo parrafo parrafo parrafo"; 
+    }
+
+}
