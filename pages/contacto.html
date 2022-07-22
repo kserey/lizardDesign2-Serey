@@ -11,13 +11,15 @@
 
     
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylesbt.css">
     <title>Contacto</title>
 </head>
 <body>
     <div class="contenedorPrincipal">
+        <!-- HEADER -->
+
         <header class="header">
-                
+               
             <!-- Menú -->
 
             <nav class="headerMenu">
@@ -49,21 +51,56 @@
                 </div>
             </nav>
 
+            
+            <!-- CARRUSEL -->
 
-            <!-- Portada -->
+            <div class="carrusel">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-            <div class="portada">
+                    <div class="carousel-inner">
 
-                <div class="portadaTexto">
-                    <h1>Bienvenidos a LizardDesign!</h1>
-                    <h2 class="portadaTextoBajada">Estampados y Papelería</h2>
+                        <div class="carousel-item active">
+                            <img src="../img/portada1.png" class="d-block w-100" alt="imagen portada 1">
+                                               
+                            <div class="carousel-caption text-primary">
+                                <h1> Bienvenidos a LizardDesign </h1>
+                                <h2 class="subTitleCarrusel1"> Estampados y Papelería </h2>
+                                <h3>En nuestro emprendimiento familiar hacemos realidad tus ideas</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../img/portada2.png" class="d-block w-100" alt="imagen portada 2">
+                            <div class="carousel-caption text-danger">
+                                <h1> OFERTAS! </h1>
+                                <h2 class="subTitleCarrusel2"> Aprovecha nuestros productos en stock con un 30% OFF </h2>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../img/portada3.png" class="d-block w-100" alt="imagen portada 3">
+                            <div class="carousel-caption text-primary">
+                                <h1> Celebra en grande </h1>
+                                <h2 class="subTitleCarrusel3"> Papelería y toppers personalizados para tus fiestas temáticas </h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
             </div>
 
-        
-
         </header>
-
+                
         <!-- Main -->    
 
         <main>
@@ -72,36 +109,67 @@
             </section>
 
             <section class="contacto">
-                <p>Puedes comunicarte con nosotros:</p>
-                <ul>
-                    <li>por whatsapp al +56 9 7810 3737</li>
-                    <li>por correo electrónico a contacto.lizarddesing@gmail.cl</li>
-                    <li>en nuestro instagram</li>
-                    <li>o déjanos un mensaje en el formulario de contacto acá mismo</li>
-                </ul>
-                            
 
-                <form action="" method="">
-                    <fieldset>
-                        <legend> CONTACTA CON NOSOTROS </legend>
-                        <div>
-                            <input type="text" name="nombre" placeholder="Cómo te decimos?">
-                        </div>
-            
-                        <div>
-                            <input type="email" name="email" placeholder="Dónde te ecribimos de vuelta?">
-                        </div>
-
-                        <div>
-                            <input type="text" name="mensaje" placeholder="Cómo te ayudamos?">
-                        </div>
-            
-                        <div>
-                            <input type="submit" value="Enviar">
-                        </div>
-                    </fieldset>                  
-                </form>
+                           
             </section>
+
+
+            <div class="contact1">
+
+
+
+                <div class="container-contact1">
+
+                    <div class="contact1-pic">
+                        <img src="../img/logo.png" alt="Logo LizardDesign contacto">
+
+                        <div class="textoContacto">
+                            <p>Cómo puedes comunicarte con nosotros?</p>
+                            <ul>
+                                <li>por whatsapp al +56 9 7810 3737</li>
+                                <li>por correo electrónico a contacto.lizarddesign@gmail.com</li>
+                                <li>en nuestro instagram</li>
+                                <li>o déjanos un mensaje en el formulario de contacto acá mismo</li>
+                            </ul>
+                        </div>
+
+                    </div>                
+                                           
+        
+                    <form class="contact1-form">
+                               
+                        <div class="wrap-input1">
+                            <input class="input1" type="text" placeholder="Cómo te llamas?">
+                            <span class="shadow-input1"></span>
+                        </div>
+        
+                        <div class="wrap-input1">
+                            <input class="input1" type="text" name="Email" placeholder="A qué mail te respondemos?">
+                            <span class="shadow-input1"></span>
+                        </div>
+        
+                        <div class="wrap-input1">
+                            <input class="input1" type="text" name="Asunto" placeholder="Sobre qué quieres hablar?">
+                            <span class="shadow-input1"></span>
+                        </div>
+        
+                        <div class="wrap-input1">
+                            <textarea class="input1" name="Mensaje" placeholder="Cuéntanos qué tienes en mente!"></textarea>
+                            <span class="shadow-input1"></span>
+                        </div>
+        
+                        <div class="container-contact1-form-btn">
+                            <button class="contact1-form-btn">
+                                <span>
+                                    Enviar
+                                </span>
+                            </button>
+                        </div>
+
+                    </form>
+                    
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -111,6 +179,8 @@
             </a>
         </footer>
     </div>
+
+
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

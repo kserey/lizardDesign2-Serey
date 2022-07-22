@@ -1,0 +1,418 @@
+/*CSS PROY TIENDA LIZARD_DESING*/
+/*ENTREGA BT*/
+
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ESTILOS GENERALES */
+
+body{
+    /*border: solid pink;*/
+    background-color: rgb(11, 11, 199);
+}
+
+
+
+/* ESTILOS HEADER */
+
+.header{
+    /*border: solid magenta;*/
+    font-size: 1rem;
+}
+
+
+/* ESTILOS HEADER > MENÚ */
+
+.headerMenu{
+    /*border: solid yellow;*/
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #rgb(11, 11, 199);
+    position: fixed;
+    z-index: 100;
+}
+
+.menu .ul{
+    /*border: solid green;*/
+    display: flex;
+    height: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-shadow: 0.5px 0.5px black;
+    background-color: rgb(11, 11, 199);
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.menu ul li{
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+
+.ul a{
+    color: white;
+}
+
+
+.menu ul li:hover{ 
+    border: solid whitesmoke;
+    padding: 5px;
+    background-color: rgb(105, 164, 251);
+    border-radius: 15px;
+ }
+
+
+/* ESTILOS HEADER > MENÚ > SUBMENU */
+
+.subMenu{
+    color: whitesmoke;
+    display: none;
+    position: absolute;
+    background-color:  rgb(70, 70, 204);
+    border-radius: 15px;
+    padding: 1px;
+}
+
+.menu ul li:hover > .subMenu{
+    display: block;
+    padding: 0.5px;
+}
+
+.subMenu li{
+    font-size: 0.8rem;
+}
+
+/* ESTILOS DEL CARRUSEL */
+
+.carrusel{
+    /*border: solid red;*/
+}
+
+/*
+
+.carousel-caption{
+    
+}
+
+.carousel-caption h1{
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.carousel-caption h2{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.carousel-caption h3{
+    font-weight: bolder;
+    font-size: medium;
+}
+
+*/
+
+/* ESTILOS DEL MAIN */
+
+
+/* ESTILOS DEL MAIN > BOTÓN WSP*/
+
+main{
+    /*border: solid green;*/
+    padding: 0.5rem;
+    background-color:rgb(163, 199, 255);
+}
+
+.botonWsp{
+    display: flex;
+    position:fixed;
+    width:3rem;
+    height:3rem;
+    bottom:50%;
+    right:1%;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.logoMini{
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.botonWsp img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+/* ESTILOS FORMULARIO CONTACTO */
+
+
+.contact1 {
+    border: solid orange;
+    width: 100%;
+    min-height: 100%;
+    padding: 15px;
+  
+    background-color: #009bff;    background-image: linear-gradient(to right, #0072ff , #00c6ff);
+}
+
+.container-contact1 {
+    border: solid black;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact1-pic {
+    border: solid red;
+    overflow:hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+}
+
+.textoContacto p {
+    border: solid pink;
+	line-height: 1.7;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.textoContacto ul {
+    border: solid slateblue;
+}
+
+.textoContacto ul li {
+    list-style-type:circle;
+}
+
+.contact1-form {
+    /*border: solid green;*/
+    overflow:hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    padding: 2% 0%;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+.textoContacto{
+    padding-top: 2%;  
+}
+
+.contact1-pic img {
+    max-width: 50%;
+}
+
+input.input1 {
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+}
+
+input .input1 + .shadow-input1 {
+    border-radius: 25px;
+}
+  
+textarea.input1 {
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 12px 30px;
+}
+
+textarea.input1, .shadow-input1 {
+    border-radius: 25px;
+}
+  
+.wrap-input1 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+  
+.input1 {
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #74b1ea;
+}
+  
+.shadow-input1 {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(87,184,70, 0.5);
+}
+  
+.container-contact1-form-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact1-form-btn {
+    min-width: 193px;
+    height: 50px;
+    border-radius: 25px;
+    background: #1327bd;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact1-form-btn:hover {
+    background: #08b8d7;
+}
+
+button {
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* ESTILOS DEL FOOTER */
+
+footer{
+    /*border: solid yellow;*/
+    display: flex;
+    padding: 1rem;
+    background-color: #8AE2FB;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a img{
+    width: 2rem;
+    border-radius: 50%;
+}
+
+footer p{
+    /*border: solid green;*/
+    padding-right: 0.8rem;
+}
+
+
+/* MEDIA QUERIES*/
+
+/* PARA MÓVILES */
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .contact1-pic {
+        width: 100%;
+    }
+
+    .contact1-form {
+        width: 100%;
+    }
+}
+
+/* PARA TABLET VERTICAL */
+@media only screen and (min-width:480px) and (max-width:576px){
+
+    .contact1-pic {
+        width: 50%;
+        font-size: X-small;
+    }
+
+    .contact1-form {
+            width: 40%;
+    }
+
+    .input1{
+            font-size: X-small;
+    }
+
+        
+    input.input1 {
+        height: 20px;
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .contact1-form-btn {
+        min-width: 100%;
+        height: 30px;
+        border-radius: 15px;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 25px;
+    }
+
+    .wrap-input1 {
+        width: 80%;
+        z-index: 1;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/* PARA TABLET HORIZONTAL */
+
+@media only screen and (min-width:576px) and (max-width:1024px){
+
+    .contact1-pic {
+        width: 40%;
+        font-size: small;
+    }
+
+    .contact1-form {
+        width: 50%;
+    }
+
+    .input1{
+        font-size: small;
+    }
+
+}
+
+/* PARA ESCRITORIO */
+@media screen and (min-width:1024px){
+
+}
