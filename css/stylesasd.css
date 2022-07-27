@@ -13,40 +13,31 @@
 
 body{
     /*border: solid pink;*/
-    background-color: #8AE2FB;
+    background-color: rgb(105, 164, 251);
 }
-
 
 /* ESTILOS HEADER */
 
 .header{
     /*border: solid magenta;*/
+    grid-area: header;
     font-size: 1rem;
 }
-
 
 /* ESTILOS HEADER > MENÚ */
 
 .headerMenu{
     border: solid yellow;
-    background-color: #035e78;
     display: flex;
-    justify-content: space-between;
+    width: 100vw;
+    justify-content: space-around;
     align-items: center;
+    background-color: #8AE2FB;
     position: fixed;
-    z-index: 100;
 }
 
-.logoMarca{
-    width: 15%;
-}
-
-.headerMenuMarca{
-    border: solid green;
-    display: inline-block;
-}
-
-.headerMenuBurguer{
+/*no usar en burguer*/
+.menu .ul{
     border: solid green;
     display: flex;
     height: 1.6rem;
@@ -54,21 +45,27 @@ body{
     align-items: center;
     color: whitesmoke;
     text-shadow: 0.5px 0.5px black;
+    background-color: rgb(11, 11, 199);
     border-radius: 15px;
     font-size: 1rem;
     font-weight: bold;
     padding: 1rem;
 }
 
-
-.headerMenuBurguer ul li{
+/*no usar en burguer*/
+.menu ul li{
     margin: 0.5rem;
     padding: 0.3rem;
     font-weight: bold;
 }
 
+/*pasado al burguer ok*/
+.ul a{
+    color: white;
+}
 
-.headerMenuBurguer ul li:hover{ 
+/*pasado al burguer ok*/
+.menu ul li:hover{ 
     border: solid whitesmoke;
     padding: 5px;
     background-color: rgb(105, 164, 251);
@@ -87,7 +84,7 @@ body{
     padding: 1px;
 }
 
-.headerMenuBurguer ul li:hover > .subMenu{
+.menu ul li:hover > .subMenu{
     display: block;
     padding: 0.5px;
 }
@@ -96,20 +93,31 @@ body{
     font-size: 0.8rem;
 }
 
-/* ESTILOS HEADER > CARRUSEL */
+/* ESTILOS HEADER > PORTADA */
 
-.carrusel{
-    border: solid black;
-    margin-top: 50px;
+.portada{
+    /*border: solid black;*/
+    grid-area: portada;
+    height: 30vh;
+    padding: 20vh 5rem 5rem 5rem;
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url('../img/portada1.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    justify-content: left;
+    color: white;
 }
 
+/*.portadaTexto{
+}*/
 
 h1{
-
+    font-size: 2rem;
 }
 
-.subTitleCarrusel1, .subTitleCarrusel2, .subTitleCarrusel3 {
-
+.portadaTextoBajada{
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
 }
 
 /* ESTILOS DEL MAIN */
@@ -297,9 +305,8 @@ footer p{
 
 /* MEDIA QUERIES*/
 
-/* PARA MÓVILES */
-@media only screen and (min-width:320px) and (max-width:480px){
-
+@media screen and (min-width:600px){
+    
     .news{
         /*border: solid blue;*/
         padding: 0.5rem;
@@ -333,24 +340,14 @@ footer p{
 
 
 }
-
-/* PARA TABLET */
-@media only screen and (min-width:576px) and (max-width:991px){
-
-}
-
-/* PARA ESCRITORIO */
+/*
 @media screen and (min-width:1024px){
-
-    .subTitleCarrusel1, .subTitleCarrusel2, .subTitleCarrusel3{
-        display: none;
-    }
-
     .header{
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
+
 
     .mainNosotros{
         grid-template-rows: 0.5fr 1fr 0.3fr 0.3fr;

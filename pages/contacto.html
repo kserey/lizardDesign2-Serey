@@ -11,7 +11,7 @@
 
     
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/stylesbt.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -19,39 +19,70 @@
         <!-- HEADER -->
 
         <header class="header">
-               
+        
             <!-- Menú -->
 
-            <nav class="headerMenu">
+            <div class="headerMenu">
+                <a class="col-5" href="../index.html" rel="noreferrer noopener">
+                    <img src="../img/logo.png" class="logoMarca" alt="logo LizardDesign navbar">
+                </a>
 
-                <div class="menu">
-                    <ul class="ul">
-                        
-                        <li><a href="ofertas.html">OFERTAS!</a></li>
-                        
-                        <li><a href="productos.html">Productos</a> 
-                            <ul class="subMenu">
-                                <li><a href="productos.html#estampados">Estampados</a>
+                            <!-- NavBar -->
+                <nav class="navbar navbar-expand-lg col-7 fondo-nav">
+                    <div class="container-fluid">
+                        <a class="navbar-brand linkMenu" href="../index.html">LizardD</a>
+                        <button class="navbar-toggler botonBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ofertas.html">Ofertas!</a>
+                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                    </a>
+                                    <ul class="dropdown-menu subMenu">
+                                        <li>
+                                            <a class="dropdown-item" href="productos.html#estampados">Estampados</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="productos.html#papeleria">Papelería</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="productos.html#papeleria"> Papelería</a>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Conócenos
+                                    </a>
+                                    <ul class="dropdown-menu subMenu">
+                                        <li>
+                                            <a class="dropdown-item" href="conocenos.html">Quiénes Somos</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="conocenos.html">Antes de Comprar</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="conocenos.html">Despachos</a>
+                                        </li>
+                                    </ul>
                                 </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                                                                
                             </ul>
-                        </li>
-                        
-                        <li><a href="conocenos.html">Conócenos</a> 
-                            <ul class="subMenu">
-                                <li> Quiénes Somos </li>
-                                <li> Antes de Comprar </li>
-                                <li> Despachos </li>
-                            </ul>
-                        </li>
+                        </div>
+                    </div>
+                </nav>
+            </div>
 
-                        <li><a href="contacto.html">Contáctanos</a></li>
-                    </ul>
-                </div>
-            </nav>
 
-            
+
+            <!-- Portada -->
+        
             <!-- CARRUSEL -->
 
             <div class="carrusel">
@@ -61,17 +92,16 @@
 
                         <div class="carousel-item active">
                             <img src="../img/portada1.png" class="d-block w-100" alt="imagen portada 1">
-                                               
-                            <div class="carousel-caption text-primary">
+                                                
+                            <div class="carousel-caption">
                                 <h1> Bienvenidos a LizardDesign </h1>
                                 <h2 class="subTitleCarrusel1"> Estampados y Papelería </h2>
-                                <h3>En nuestro emprendimiento familiar hacemos realidad tus ideas</h3>
                             </div>
                         </div>
 
                         <div class="carousel-item">
                             <img src="../img/portada2.png" class="d-block w-100" alt="imagen portada 2">
-                            <div class="carousel-caption text-danger">
+                            <div class="carousel-caption">
                                 <h1> OFERTAS! </h1>
                                 <h2 class="subTitleCarrusel2"> Aprovecha nuestros productos en stock con un 30% OFF </h2>
                             </div>
@@ -79,9 +109,9 @@
 
                         <div class="carousel-item">
                             <img src="../img/portada3.png" class="d-block w-100" alt="imagen portada 3">
-                            <div class="carousel-caption text-primary">
+                            <div class="carousel-caption">
                                 <h1> Celebra en grande </h1>
-                                <h2 class="subTitleCarrusel3"> Papelería y toppers personalizados para tus fiestas temáticas </h2>
+                                <h2 class="subTitleCarrusel3"> Hacemos realidad tus ideas para tus celebraciones temáticas </h2>
                             </div>
                         </div>
 
