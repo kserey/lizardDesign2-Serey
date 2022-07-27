@@ -43,7 +43,7 @@ body{
 
 .headerMenuMarca{
     border: solid green;
-    display: inline-flex;
+    display: inline-block;
 }
 
 .headerMenuBurguer{
