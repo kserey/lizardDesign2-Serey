@@ -429,7 +429,8 @@ footer p{
         grid-template-rows: auto;
         grid-template-areas:"newsTitle newsTitle"
                             "newsSubtitle1 newsSubtitle2"
-                            "newsHijos1 newsHijos2"                            "newsHijos2                          "newsHijos1 
+                            "newsHijos1 newsHijos2"
+                            "newsHijos2 newsHijos1" 
                             "newsSubtitle3 newsSubtitle4"
                             "newsHijos3 newsHijos4";
         align-items: center;

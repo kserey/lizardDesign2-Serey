@@ -1,0 +1,16 @@
+/* comentario en sass y css */
+.header {
+  /*border: solid magenta;*/ }
+  .header .headerMenu {
+    /*border: solid yellow;*/
+    width: 100vw;
+    background-color: #69a4fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100; }
+
+body {
+  /*border: solid pink;*/
+  background-color: #8AE2FB; }

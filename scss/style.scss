@@ -1,0 +1,28 @@
+// línea de comentario scss
+/* comentario en sass y css */
+
+
+// nesting
+
+.header{
+    /*border: solid magenta;*/
+
+    .headerMenu{
+        /*border: solid yellow;*/
+        width: 100vw;
+        background-color: rgb(105, 164, 251);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 100;
+    }
+
+
+
+}
+
+body{
+    /*border: solid pink;*/
+    background-color: #8AE2FB;
+}
